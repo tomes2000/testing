@@ -1,0 +1,125 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+
+/* Navbar */
+
+div.container-fluid,
+.bg-light,
+ul.dropdown-menu.show,
+div.modal-header,
+div.modal-footer {
+    background-color: #C0C0C0 !important;
+}
+.navbar {
+    padding: 1% 0;
+    font-size: 1.2em;
+}
+.navbar-brand {
+    min-height: 55px;
+    padding: 0 15px 5px;
+    
+}
+
+.navbar-font-size {
+    font-size: 1.4em;
+}
+
+/* Global */
+
+.padding {
+    padding: 80px 0;
+}
+
+.padding img {
+    width: 100%;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+/* Fixed image */
+#fixed {
+    background: url(assets/images/industry.jpg) no-repeat center center fixed;
+    display:table;
+    height: 100%;
+    position: relative;
+    width:100%;
+    background-size: cover;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background-color: #C0C0C0;
+    padding: 1%;
+    color: black;
+    bottom: 0;
+}
+
+.fa {
+    padding: 15px;
+    font-size: 50px;
+    color: #fff;
+}
+
+.fa:hover {
+    color: #d5d5d5;
+    text-decoration: none;
+}
+
+.icon {
+    max-width: 200px;
+}
+
+/*Making the design responsive to mobile devices */
+
+@media (max-width: 768px) {
+    .landing-text h1 {
+        font-size: 300%
+    }
+    .fa {
+        font-size: 20px;
+        padding: 10px;
+    }
+    .icon {
+        padding-top: 5%;
+        max-width: 100px;
+    }
+
+}
+
+#home {
+    background: url(assets/images/plant-design.jpg) no-repeat center center fixed;
+    display: table;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+
+.landing-text {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+}
+
+.landing-text h1 {
+    font-size: 700%;
+    font-weight: 700px;
+}
+
+.landing-text h3 {
+    font-size: 500%;
+    font-weight: 700px;
+}
+
+#home a {
+    font-size: 300%;
+    color: white;
+}

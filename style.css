@@ -1,34 +1,9 @@
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
-
-/* Navbar */
-
-div.container-fluid,
-.bg-light,
-ul.dropdown-menu.show,
-div.modal-header,
-div.modal-footer {
-    background-color: #C0C0C0 !important;
-}
-.navbar {
-    padding: 1% 0;
-    font-size: 1.2em;
-}
-.navbar-brand {
-    min-height: 55px;
-    padding: 0 15px 5px;
-    
-}
-
-.navbar-font-size {
-    font-size: 1.4em;
-}
-
 /* Global */
-
+* {
+    margin: 0;
+    padding:0;
+    border:0;
+}
 .padding {
     padding: 80px 0;
 }
@@ -41,28 +16,68 @@ p {
     font-size: 1.5rem;
 }
 
-/* Fixed image */
-#fixed {
-    background: url(assets/images/industry.jpg) no-repeat center center fixed;
-    display:table;
+
+html, body {
     height: 100%;
-    position: relative;
-    width:100%;
-    background-size: cover;
+    width: 100%;
 }
+
+
+/* Navbar */
+
+#logo{
+    float: left; 
+    font-size: 280%;
+    margin-left: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:#555555;
+    text-align: center;
+}
+ 
+#menu{
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+}
+
+
+#logo, #menu{
+    line-height: 75px;
+}
+
+#menu li {
+    float: right;
+    margin-right: 30px;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu a:hover {
+    border-bottom: 1px solid #777777;
+}
+
+body {
+    font-family: Lato;
+
+}
+
 
 /* Footer */
 
 footer {
     width: 100%;
-    background-color: #C0C0C0;
-    padding: 1%;
+    background-color: silver;
+    padding: 5% 5% 5% 5%;
     color: black;
     bottom: 0;
+    max-width:100%;
 }
 
 .fa {
-    padding: 15px;
+    padding: 10px;
     font-size: 50px;
     color: #fff;
 }
@@ -72,27 +87,9 @@ footer {
     text-decoration: none;
 }
 
-.icon {
-    max-width: 200px;
-}
 
-/*Making the design responsive to mobile devices */
 
-@media (max-width: 768px) {
-    .landing-text h1 {
-        font-size: 300%
-    }
-    .fa {
-        font-size: 20px;
-        padding: 10px;
-    }
-    .icon {
-        padding-top: 5%;
-        max-width: 100px;
-    }
-
-}
-
+/* Hero image and text */
 #home {
     background: url(assets/images/plant-design.jpg) no-repeat center center fixed;
     display: table;
@@ -120,6 +117,47 @@ footer {
 }
 
 #home a {
-    font-size: 300%;
+    font-size: 400%;
     color: white;
+}
+
+/* Fixed image*/
+#fixed {
+    background: url(assets/images/fixed.jpg) no-repeat center center fixed;
+    display: table;
+    height: 90%;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+}
+
+/* Services*/
+.padding ul {
+    font-size: 1.3rem;
+}
+.padding img {
+    max-height: 90%;
+}
+
+/* Form*/
+
+/*Making the design responsive to mobile devices */
+
+@media (max-width: 768px) {
+    .landing-text h1 {
+        font-size: 200%;
+    }
+    .landing-text h3 {
+        font-size: 150%;
+    }
+    #home a {
+        font-size: 150%;
+    }
+    
+    .fa {
+        font-size: 20px;
+        padding: 10px;
+    }
+    
+   
 }

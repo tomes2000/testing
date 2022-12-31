@@ -27,14 +27,14 @@
       <nav>
           <ul id="menu">
               <li>
-                  <a href="signup.html">Contact</a>
+                  <a href="#link-contact">Contact</a>
               </li>
               <li>
-                  <a href="gallery.html">Services</a>
+                  <a href="#link-services">Services</a>
               </li>
 
               <li>
-                  <a href="index.html">About</a>
+                  <a href="#link-about">About</a>
               </li>
           </ul>
       </nav>
@@ -49,7 +49,7 @@
       <div class="landing-text">
         <h1>Devkota Consultancy</h1>
         <h3>Engineering design professionals</h3>
-        <a href="#" class="btn btn-default btn-lg">Click here to get started!</a>
+        <a href="#link-services" class="btn btn-default btn-lg">Click here to get started!</a>
       </div>
     </div>
     <!-- Start of Hero section -->
@@ -61,9 +61,9 @@
 
     <!-- Start of About section -->
     <!-- About -->
-      <div class="padding">
+      <div class="padding" id="link-about">
         <div class="container">
-          <h1><u>About Us</u></h1>
+          <h2><u>About Us</u></h2>
           <div class="row">
             <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12"> <!-- Here bootstrap is being used to make the site responsive for users with varying screensizes-->
               <h4>Our company:</h4>
@@ -83,21 +83,26 @@
         </div>
       </div>
     <!-- Further About section -->
-    
-    <div class="padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-6">
-            <img src="assets/images/hero.jpg">
-            </div>
-            <div class="col-sm-6 text-center">
-              <h2><u>Industry Professionals</u></h2>
-              <p>With <b>over 30 years</b> of experience in the industry, we have been a part of many high profile projects for clients all across the UK. We have a strong reputation for not only getitng the work completed, but also ensuring that any piece of work that has our name, is completed to <b>our high level of standard</b>. We have a dedicated team that carry out quality checks on the final project submission to ensure that quality isn't comprised. Devkota Consultancy is commited to tackling difficult problems and complex projects for <b>your</b> company.</p> 
-            </div>
+
+    <h2 class="headings text-center mt-5"><u>Industry Professionals</u></h2>
+    <div class="container">
+      <div class="row align-items-center mt-2">
+        <div class="col-sm">
+          <img src="assets/images/hero.jpg" class="img-fluid about-image mt-5" alt="blond haired business woman">
         </div>
       </div>
-    </div>
+      <div class="row align-items-center mt-2 index-about">
+          <br>
+          <div>
+            <p class="text-center">
+              With <b>over 30 years</b> of experience in the industry, we have been a part of many high profile projects for clients all across the UK. We have a strong reputation for not only getitng the work completed, but also ensuring that any piece of work that has our name, is completed to <b>our high level of standard</b>. We have a dedicated team that carry out quality checks on the final project submission to ensure that quality isn't comprised. Devkota Consultancy is commited to tackling difficult problems and complex projects for <b>your</b> company.</p>
+            </p>
+          </div>
+        </div>
+      </div>
     <!-- End of About section -->
+
+    
 
     <!-- Start of Fixed Image section -->
     <!-- Fixed Image -->
@@ -107,7 +112,7 @@
 
     <!-- Start of Services section -->
     <!-- Services -->
-    <div class="padding">
+    <div class="padding" id="link-services">
       <div class="container">
         <div class="row">
           <div class="col-sm-6" >
@@ -123,17 +128,66 @@
                 <li>Environmental impact and sustainability assessment</li>
                 <li>Design proposal</li>
               </ul>
-              <p>Fill in the form below to arrange a <b>FREE</b> review meeting, where our design team will contact you to discuss various services we can offer and their respective payment plans.</p>
+              <p>Fill in the form below to arrange a <b>FREE</b> appointment, where our design team will get back to you to discuss your requirements in further detail and produce a custom-tailored service plan to help you in achieving your goal. Our payment plans follow competitve market rates and will be discuseed after the service plan report is completed. We strive in ensuring we give our clients the best of both value and quality.</p>
             </div>
             <div class="col-sm-6">
               <img class="image-height" src="assets/images/services.jpg">
         </div>
       </div>
     </div>
+    <!-- End of Services section -->
+
+
+
+    <!-- Start of Contact Form section -->
+    <!-- Contact Form -->
+    <div class="container mt-5" id="link-contact">
+      <h1>Contact Form</h1>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstName" required>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastName" required>
+        </div>
+        <div class="col-md-8">
+          <label for="emailInfo" class="form-label">E-mail</label>
+          <input type="email" class="form-control" id="emailInfo" required>
+        </div>
+        <div class="col-md-4">
+          <label for="phoneNumber" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phoneNumber" placeholder="+44" required>
+        </div>
+        <div class="form-group mt-2">
+          <label for="exampleFormControlSelect5">Where did you hear about us?</label>
+          <select class="form-control" id="exampleFormControlSelect5">
+            <option>Pick an option</option>
+            <option>Google</option>
+            <option>Instagram</option>
+            <option>Pinterest</option>
+            <option>Facebook</option>
+            <option>Newsletter</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="col-md-12">
+          <label for="comments" class="form-label">What service do you require?</label>
+          <textarea class="form-control" id="comments" rows="3" required></textarea>
+        </div>
+        <div class="col-md-12">
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+  </div>
+  <!-- End of Contact Form section -->
+
+
 
     <!-- Start of Footer section -->
     <!-- Footer -->
-      <footer class="container-fluid text-center">
+      <footer class="container-fluid text-center footer-padding">
         <div class="row">
           <div class="col-sm-4">
             <h3>Opening Times</h3>
@@ -154,7 +208,8 @@
             class="email-link">devconsult@gmail.com</a></p>
         <p><i aria-hidden="true" class="fas fa-phone me-3"></i>Phone: <a href="tel:03-546-098-23">+447123456789</a> - London, UK</p>
         </div>
-      </footer>
+      </div>
+    </footer>
       <!-- End of Footer section -->
 
 </body>

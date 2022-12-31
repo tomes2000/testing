@@ -70,7 +70,7 @@ body {
 footer {
     width: 100%;
     background-color: silver;
-    padding: 5% 5% 5% 5%;
+    padding: 1%;
     color: black;
     bottom: 0;
     max-width:100%;
@@ -87,7 +87,10 @@ footer {
     text-decoration: none;
 }
 
-
+footer div {
+    padding:0;
+    margin: 0;
+}
 
 /* Hero image and text */
 #home {
@@ -141,6 +144,10 @@ footer {
 
 /* Form*/
 
+.container form {
+    padding: 3%;
+}
+
 /*Making the design responsive to mobile devices */
 
 @media (max-width: 768px) {
@@ -161,3 +168,4 @@ footer {
     
    
 }
+

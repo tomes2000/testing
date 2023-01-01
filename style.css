@@ -78,7 +78,7 @@ footer {
 
 .fa {
     padding: 10px;
-    font-size: 50px;
+    font-size: 60px;
     color: #fff;
 }
 
@@ -134,13 +134,19 @@ footer div {
     position: relative;
 }
 
+
+/* COVID Banner */
+
+p.text-center.mt-5.mb-5 {
+    background-color: #e0faed;
+}
+
+
 /* Services*/
-.padding ul {
+.container ul {
     font-size: 1.3rem;
 }
-.padding img {
-    max-height: 90%;
-}
+
 
 /* Form*/
 
@@ -162,7 +168,7 @@ footer div {
     }
     
     .fa {
-        font-size: 20px;
+        font-size: 30px;
         padding: 10px;
     }
     
